@@ -1,11 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:project1_mi2b/Screen/latihan_form/page_dosen.dart';
+import 'package:project1_mi2b/Screen/latihan_form/page_tab_dosen.dart';
+import 'package:project1_mi2b/Screen/nav_bar/page_search_list.dart';
+import 'package:project1_mi2b/Screen/nav_bar/page_tab_bar.dart';
+import 'package:project1_mi2b/Screen/page_cache_image.dart';
 import 'package:project1_mi2b/Screen/page_dua.dart';
 import 'package:project1_mi2b/Screen/page_empat.dart';
+import 'package:project1_mi2b/Screen/page_gambar.dart';
+import 'package:project1_mi2b/Screen/page_list_data.dart';
+import 'package:project1_mi2b/Screen/page_notification.dart';
 
 
 
 import 'package:project1_mi2b/Screen/page_satu.dart';
-import 'package:project1_mi2b/Screen/page_tiga.dart';void main() {
+import 'package:project1_mi2b/Screen/page_simple_login.dart';
+import 'package:project1_mi2b/Screen/page_tiga.dart';
+import 'package:project1_mi2b/Screen/page_url_image.dart';
+import 'package:project1_mi2b/map/Map_rs_page.dart';
+import 'package:project1_mi2b/map/map_multi_markers_page.dart';
+import 'package:project1_mi2b/map/map_page.dart';
+import 'package:project1_mi2b/map/map_page_kost.dart';void main() {
   runApp(const MyApp());
 }
 
@@ -127,6 +141,217 @@ class PageOne extends StatelessWidget {
                 //ini untuk pindah page
                 color: Colors.pink,
                 child: Text('Page 4',
+                  style: TextStyle(fontSize: 14, color: Colors.white ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: MaterialButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)
+                => PageGambar()
+                ));
+              },
+                elevation: 18.0,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                //ini untuk pindah page
+                color: Colors.pink,
+                child: Text('Page Gambar',
+                  style: TextStyle(fontSize: 14, color: Colors.white ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: MaterialButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)
+                => PageUrlImage()
+                ));
+              },
+                elevation: 18.0,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                //ini untuk pindah page
+                color: Colors.pink,
+                child: Text('Page Url',
+                  style: TextStyle(fontSize: 14, color: Colors.white ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: MaterialButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)
+                => PageCacheImage()
+                ));
+              },
+                elevation: 18.0,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                //ini untuk pindah page
+                color: Colors.pink,
+                child: Text('Page Cache Image',
+                  style: TextStyle(fontSize: 14, color: Colors.white ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: MaterialButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)
+                => PageNotification()
+                ));
+              },
+                elevation: 18.0,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                //ini untuk pindah page
+                color: Colors.pink,
+                child: Text('Page Toast',
+                  style: TextStyle(fontSize: 14, color: Colors.white ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: MaterialButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)
+                => PageListData()
+                ));
+              },
+                elevation: 18.0,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                //ini untuk pindah page
+                color: Colors.pink,
+                child: Text('Page List Data',
+                  style: TextStyle(fontSize: 14, color: Colors.white ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: MaterialButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)
+                => PageSimpleLogin()
+                ));
+              },
+                elevation: 18.0,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                //ini untuk pindah page
+                color: Colors.pink,
+                child: Text('Page Login',
+                  style: TextStyle(fontSize: 14, color: Colors.white ),
+                ),
+              ),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: MaterialButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)
+                => PageTabBar()
+                ));
+              },
+                elevation: 18.0,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                //ini untuk pindah page
+                color: Colors.pink,
+                child: Text('Tab Bar',
+                  style: TextStyle(fontSize: 14, color: Colors.white ),
+                ),
+              ),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: MaterialButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)
+                => PageTabDosen()
+                ));
+              },
+                elevation: 18.0,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                //ini untuk pindah page
+                color: Colors.pink,
+                child: Text('Dosen',
+                  style: TextStyle(fontSize: 14, color: Colors.white ),
+                ),
+              ),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: MaterialButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)
+                => Pagesearchingliststate()
+                ));
+              },
+                elevation: 18.0,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                //ini untuk pindah page
+                color: Colors.pink,
+                child: Text('Search',
+                  style: TextStyle(fontSize: 14, color: Colors.white ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: MaterialButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)
+                => MapPage()
+                ));
+              },
+                elevation: 18.0,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                //ini untuk pindah page
+                color: Colors.pink,
+                child: Text('Map',
+                  style: TextStyle(fontSize: 14, color: Colors.white ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: MaterialButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)
+                => MapPageKost()
+                ));
+              },
+                elevation: 18.0,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                //ini untuk pindah page
+                color: Colors.pink,
+                child: Text('Map Kost',
+                  style: TextStyle(fontSize: 14, color: Colors.white ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: MaterialButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)
+                => MapMultiMarkersPage()
+                ));
+              },
+                elevation: 18.0,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                //ini untuk pindah page
+                color: Colors.pink,
+                child: Text('Map Hotel',
+                  style: TextStyle(fontSize: 14, color: Colors.white ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: MaterialButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)
+                => MapRsPage()
+                ));
+              },
+                elevation: 18.0,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                //ini untuk pindah page
+                color: Colors.pink,
+                child: Text('Map Rumah Sakit',
                   style: TextStyle(fontSize: 14, color: Colors.white ),
                 ),
               ),
